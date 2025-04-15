@@ -78,7 +78,7 @@
         align-items: center;
     }
     .home-text h1{
-        font-size: var(--big-font);
+        font-size: 90px;
         line-height: 0.8;
         color: brown;
         font-family: 'Patyone one' , sans-serif;
@@ -91,6 +91,13 @@
         font-weight: 400;
         line-height: 38px;
         margin-bottom: 20px;
+        display: inline-block;
+        font-size: 29px;
+        padding: 10px 25px;
+        background: #ffffffbf;
+        color: black;
+        border-radius: 4px;
+        transition: ease .40s;
     }
     .home-btn{
         display: inline-block;
@@ -101,19 +108,167 @@
         border-radius: 4px;
         transition: ease .40s;
     }
-    .home-btn:hover{
-        background: var(--bg-color);
-        transform: scale(1.1);
-    }
-    header.sticky{
-        background: var(--bg-color);
-        padding: 10px 18%;
-        box-shadow: rgba(33,35, 38, 0.1) 0px 10px 10px -10px;
-    }
+.home-btn:hover{
+    background: var(--bg-color);
+    transform: scale(1.1);
+}
 
-    .sticky .logo{
-        color: var(--text-color);
-    }
-    .sticky .navbar a{
-        color: var(--text-color);
-    }
+header.sticky{
+    background: var(--bg-color);
+    padding: 10px 18%;
+    box-shadow: rgba(33,35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.sticky .logo{
+    color: var(--text-color);
+}
+.sticky .navbar a{
+    color: var(--text-color);
+}
+.text h2{
+    font-size: var(--h2-font);
+    line-height: 1.1;
+}
+.row-items{
+    display: grid;
+    grid-template-columns: repeat(4 , 2fr);
+    grid-gap:2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+.container-box{
+    background: var(--bg-color);
+    border: 1px solid black;
+    padding: 40px 2px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+.container-img img{
+    height: 85px;
+    width: 100px;
+    padding: 15px;
+    background: var(--bg-color);
+    box-shadow: 10px 15px 35px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.container-box h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.container-box p{
+    font-size: 15px;
+    color: var(--second-color);
+}
+
+.container-box:hover{
+    box-shadow: 5px 30px 56.127px rgb(55 55 55 / 12%);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+}
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-size: var(--h2-font);
+    line-height: 1.2;
+}
+
+.package-content{
+    display: grid;
+    grid-template-columns: repeat(3 , 3fr);
+    grid-gap:2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.thum{
+    position: relative;
+    transition: all .3s cubic-bezier(cubic-bezier(0.445, 0.05, 0.55, 0.95));
+    will-change: filter;
+    cursor: pointer;
+}
+
+.thum img{
+    width: 100%;
+    height: auto;
+}
+ .thum h3{
+     position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    color: var(--bg-color) ;
+    top: 20px;
+    right: 20px;
+}
+.dest-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.stars i{
+    color: var(--main-color) ;
+    font-size: 20px;
+}
+.location h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.location p{
+    font-size: 15px;
+    color: var(--second-color);
+}
+.thum:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+}
+.Destination-content{
+    display: grid;
+    grid-template-columns: repeat(3 ,4fr);
+    grid-gap:2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.col-content{
+    position: relative;
+}
+.col-content img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(80%);
+    transition: all .3s cubic-bezier(cubic-bezier(0.445, 0.05, 0.55, 0.95));
+    will-change: filter;
+}
+.col-content h5{
+    position: absolute;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--bg-color);
+    left: 15px;
+    bottom: 60px;
+}
+
+.col-content p{
+    position: absolute;
+    font-size: 15px;
+    color: var(--bg-color);
+    left: 15px;
+    bottom: 30px;
+    letter-spacing: 2px;
+}
+.col-content img:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
